@@ -1,7 +1,3 @@
-//
-// Created by louis on 27/12/2018.
-//
-
 #ifndef CRYPTOCHIFFRE_AES192_H
 #define CRYPTOCHIFFRE_AES192_H
 
