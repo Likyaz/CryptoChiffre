@@ -1,8 +1,9 @@
 #include <iostream>
 #include "io/File.h"
 #include "crypto/historic/CaesarCode.h"
-#include "crypto/modern/AdvancedEncryptionStandard.h"
-
+#include "crypto/modern/AES128.hpp"
+#include "crypto/modern/AES192.hpp"
+#include "crypto/modern/AES256.hpp"
 
 
 int main() {
@@ -16,10 +17,9 @@ int main() {
 
     in.loadData();
 
-    AdvancedEncryptionStandard code(16, 9);
+    AES128 code;
     uint8_t key[32] = {00};
     code.setClef(key);
-    uint8_t* pkey = code.getKey();
 
 
     code.setFileIn(&in);

@@ -3,4 +3,4 @@ project(CryptoChiffre)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(CryptoChiffre main.cpp io/File.cpp io/File.h crypto/Crypto.cpp crypto/Crypto.h crypto/historic/CaesarCode.cpp crypto/historic/CaesarCode.h crypto/modern/AdvancedEncryptionStandard.cpp crypto/modern/AdvancedEncryptionStandard.h)
+add_executable(CryptoChiffre main.cpp io/File.cpp io/File.h crypto/Crypto.cpp crypto/Crypto.h crypto/historic/CaesarCode.cpp crypto/historic/CaesarCode.h crypto/modern/AdvancedEncryptionStandard.cpp crypto/modern/AdvancedEncryptionStandard.h crypto/modern/AES128.hpp crypto/modern/AES192.hpp crypto/modern/AES256.hpp)
